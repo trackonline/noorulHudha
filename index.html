@@ -310,7 +310,7 @@ function capitalizeDivision() {
         //fetchDetails();
         function fetchDetails (){
             document.getElementById("loading").style.display="block";
-            var url = `https://script.google.com/macros/s/AKfycbzH0P0Ra3VCFEeWgAWKZSgI-D1PvMqOIidvPW6PdW9pY_G5jlD-dVTt5-lPFFulhqFziQ/exec?action=details&madrassa=pallar`;
+            var url = `https://script.google.com/macros/s/AKfycbwprHDYrtnlPQgDk3qEaXMlneJcc3LnlqGy-KEvOJoeoDsuurTpQSM_k3ARlRdw3OPt/exec?action=details&madrassa=pallar`;
 
     fetch(url)
         .then(response => response.json())
@@ -412,7 +412,7 @@ document.getElementById("progressCardContainer").innerHTML = "...";
         return;
     }
     document.getElementById("loading").style.display="block";
-    var url = `https://script.google.com/macros/s/AKfycbwlugnULMJ0P3HIgR-2U0dC6fWOCvGbv_udpgU0FO0C9AOh4k0Wjs2nVOku0TfQJsfv/exec?action=score&adnumber=${adnumber}&class=${studentClass}&div=${division}&madrassa=pallar`;
+    var url = `https://script.google.com/macros/s/AKfycbwprHDYrtnlPQgDk3qEaXMlneJcc3LnlqGy-KEvOJoeoDsuurTpQSM_k3ARlRdw3OPt/exec?action=score&adnumber=${adnumber}&class=${studentClass}&div=${division}&madrassa=pallar`;
 
     fetch(url)
         .then(response => response.json())
