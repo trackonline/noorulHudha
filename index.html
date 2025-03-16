@@ -487,7 +487,7 @@ function displayProgressCard(studentInfo, studentData) {
                 } else if (subject.subject === "rank") {
                     rank = subject.obtMark + " / " + subject.maxMark;
                 } else {
-                    const grade = getGrade(subject.maxMark, subject.obtMark);
+                    const grade = getGrade(subject.maxMark,parseInt(subject.obtMark)||0);
                     const isPassed = parseInt(subject.obtMark) >= 18;
                     const statusIcon = isPassed ? 'P' : 'F';
                     const rowStyle = isPassed ? "" : 'style="background-color: #ffcccc; font-weight: bold;"';
@@ -507,7 +507,7 @@ function displayProgressCard(studentInfo, studentData) {
                     `;
 
                     totalMarks += parseInt(subject.maxMark);
-                    obtainedMarks += parseInt(subject.obtMark);
+                    obtainedMarks += parseInt(subject.obtMark)||0;
                 }
             }
         });
